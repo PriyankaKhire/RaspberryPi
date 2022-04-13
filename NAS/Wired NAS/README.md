@@ -5,6 +5,7 @@
     <ol>
       <li>Raspberry Pi 4 (that's what I got)</li>
       <li>Micro SD card reader</li>
+      <li>Your external hard drive for storage.</li>
     </ol>
   <h2>Software you'll need to install on your laptop or pc</h2>
     <ol>
@@ -32,9 +33,19 @@
       </ol>
     <h3>Adding cherry on top (Open Media Vault settings)</h3>
       <ol>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>Get your RPi's IP address again, it might have changed after installing OMV (Open media vault)</li>
+        <li>Put the address in web browser and log into your OMV. </br>Default username: admin </br>Default Password: openmediavault</li>
+        <li>Plug in your external hard drive to your RPi.</li>
+        <li><b>Mount</b> your external hard drive by going to File Systems (located in left side menu). </br>Find your external hard drive and select it, then click on mount (located at the top) and then click on apply changes.</li>
+        <li>Create a <b>shared folder</b> on your external hard drive by going to Access Rights Management -> Shared Folders -> Add</li>
+          <ol>
+            <li>Name: name your shared folder</li>
+            <li>Device: your external hard drive</li>
+            <li>Comment: Please write a meaningful comment to know what this shared folder represents.</li>
+            <li>Then click on save and apply the changes.</li>
+          </ol>
+        <li>Go to Access Rights Management -> Shared Folders -> Privileges -> give your user and group Read/Write privileges. Save and apply the changes.</li>
+        <li>Enable NFS and SMB Services and add the shared folder.</li>
       </ol>
   
   <h2>Resources</h2>
